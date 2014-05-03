@@ -9,6 +9,7 @@ Y_ATTR_NAME = 'adminIndexV'
 PUSHER_CHANNEL = 'uberhead'
 PUSHER_SLIDE_CHANGED_EVENT = 'slide-changed'
 PUSHER_VOTE_CHANGED_EVENT = 'vote-changed'
+PUSHER_FRAGMENT_CHANGED_EVENT = 'fragment-changed'
 CURRENT_VOTE_ID = 1
 
 app = flask.Flask(__name__)
@@ -31,6 +32,11 @@ def index():
         data = mdb.votes.find_one({'_id': CURRENT_VOTE_ID})
         data.pop('_id')
         p[PUSHER_CHANNEL].trigger(PUSHER_VOTE_CHANGED_EVENT, data)
+        return 'v'
+    if flask.request.args.get('action') == 'change_fragment':
+        body = flask.request.form['body']
+        p[PUSHER_CHANNEL].trigger(PUSHER_FRAGMENT_CHANGED_EVENT, body)
+        return 'f'
     return ''
 
 
