@@ -26,7 +26,7 @@
     <!-- Any section element inside of this container is displayed as a slide -->
     <div id="slides" class="slides">
         <section>
-            <a class="btn" href="#1">Reset</a>
+            <a id="reset" class="btn" href="#1" style="padding:60px;font-size: 100px">Reset</a>
         </section>
 
         <section>
@@ -124,6 +124,13 @@
     var pusher = new Pusher('41f5684231688a066aca');
     var channel = pusher.subscribe('uberhead');
 
+
+    $('a#reset').on('click',function(){
+        $.post( "http://api.uberhead.se/presentations?action=change_slide", {
+            'adminIndexH': 0,
+            'adminIndexV': 0
+        }).done(function( data ) {});
+    });
 
 </script>
 
