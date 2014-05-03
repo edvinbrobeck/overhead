@@ -19,6 +19,11 @@
 </head>
 <body>
 
+<div id="user-count">
+    <span><i class="fa fa-spinner fa-spin"></i></span>
+    <i class="fa fa-users below"></i>
+</div>
+
 <!-- Slides -->
 
 <div class="reveal">
@@ -279,6 +284,13 @@
         series.setData(seriesData, true);
     });
 
+
+    /*
+     Heartbeat Listener
+     -------------------------------*/
+    channel.bind('usercount-changed', function(data) {
+        $('#user-count span').html(data.userCount);
+    });
 
 </script>
 

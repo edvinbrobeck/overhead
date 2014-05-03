@@ -52,6 +52,13 @@
   border-radius: 999em;
   -moz-border-radius: 999em;
   -webkit-border-radius: 999em;
+
+  .below {
+    position: absolute;
+    top:115%;
+    left:16px;
+    font-size: 18px
+  }
 }
 
 #slides {
