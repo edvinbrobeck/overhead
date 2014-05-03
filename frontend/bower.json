@@ -1,0 +1,23 @@
+{
+  "name": "Slidepad",
+  "version": "0.0.1",
+  "authors": [
+    "Edvin Brobeck <edvin@raket.nu>"
+  ],
+  "description": "Slidepad from Raket",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "assets/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+        "normalize-css": "",
+        "fontawesome" : "",
+        "reveal.js": "~2.6.1"
+  }
+}
