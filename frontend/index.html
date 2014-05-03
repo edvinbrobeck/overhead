@@ -26,20 +26,17 @@
     <!-- Any section element inside of this container is displayed as a slide -->
     <div id="slides" class="slides">
         <section>
-            <h1>Uberhead</h1>
-            <h3>Modern learning.</h3>
+            <img src="assets/images/uberhead_logo.svg" alt="" style="width:300px;margin-bottom:30px;"/>
         </section>
 
         <section>
             <section>
                 <h2>Header</h2>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eum, eveniet itaque maiores odit.</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium adipisci assumenda corporis dolorem earum eius explicabo in ipsam laborum magnam nostrum obcaecati possimus praesentium quisquam quod saepe, veniam voluptate?
-                </p>
 
-                <a id="choice1" class="choice" data-value="Yes" href="#/1/1">Awesome</a>
-                <a id="choice1" class="choice" data-value="Yes" href="#/1/1">Ehm..No?</a>
+                <a class="choice" data-value="1" href="">Awesome</a>
+                <a class="choice" data-value="2" href="">Epic</a>
+                <a class="choice" data-value="3" href="">Fail</a>
 
 
             </section>
@@ -120,24 +117,19 @@
 
 <!-- Slide specific scripts
 <script src="assets/components/highcharts/js/highcharts.js"></script>
- -->
-<!--<script src="assets/components/highcharts/js/modules/exporting.js"></script>-->
+<script src="assets/components/highcharts/js/modules/exporting.js"></script>
+-->
 
 
 
 <script type="text/javascript">
 
-    $('#choice-reload').on('click',function(){
+    $('a.choice').on('click',function(e){
+        e.preventDefault();
 
-        var series  = chart.series[0];
-        console.log(series.data);
-        var seriesData = [
-            ['Awesome',   Math.floor((Math.random() * 10) + 1)],
-            ['Epic',       Math.floor((Math.random() * 10) + 1)],
-            ['Fail', Math.floor((Math.random() * 10) + 1)]
-        ];
+        // API Request send vote
+        alert($(this).data("value"));
 
-        series.setData(seriesData, true);
     });
 
 
@@ -175,32 +167,6 @@
         Reveal.slide( data.adminIndexH, data.adminIndexV );
 
     });
-
-
-    /*
-            Vote Cast Listener
-     -------------------------------*/
-    channel.bind('vote-casted',function(data){
-
-        var voteValue = data.value;
-        var series  = chart.series[0];
-        var chartData = series.data;
-
-        console.log(chartData);
-
-        var seriesData = [];
-        $.each(chartData,function(i, val){
-            var newVoteCount = val.y;
-            if(val.name == voteValue){
-                newVoteCount++;
-            }
-
-            seriesData.push([val.name, newVoteCount]);
-        });
-
-        series.setData(seriesData, true);
-    });
-
 
 </script>
 
@@ -244,7 +210,7 @@
             indexV: $('body').data('admin-index-v')
         };
         if( event.indexh > adminState.indexH || (event.indexh == adminState.indexH && event.indexv > adminState.indexV)  ){
-        //    Reveal.slide( adminState.indexH, adminState.indexV );
+            Reveal.slide( adminState.indexH, adminState.indexV );
         }
 
     } );
