@@ -262,22 +262,11 @@
     channel.bind('vote-changed',function(data){
 
 
-        alert(data);
-
-        var voteValue = data.value;
         var series  = chart.series[0];
-        var chartData = series.data;
-
-        console.log(chartData);
 
         var seriesData = [];
-        $.each(chartData,function(i, val){
-            var newVoteCount = val.y;
-            if(val.name == voteValue){
-                newVoteCount++;
-            }
-
-            seriesData.push([val.name, newVoteCount]);
+        $.each(data, function(key, val){
+            seriesData.push([key, val]);
         });
 
         series.setData(seriesData, true);
