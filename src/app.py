@@ -26,7 +26,7 @@ def index():
         return 's'
     if flask.request.args.get('action') == 'vote':
         alt = flask.request.form['alt']
-        mdb.votes.update({'_id': CURRENT_VOTE_ID}, {'$inc': {'alt%s' % alt: 1}},
+        mdb.votes.update({'_id': CURRENT_VOTE_ID}, {'$inc': {'%s' % alt: 1}},
                          upsert=True, multi=False)
         data = mdb.votes.find_one({'_id': CURRENT_VOTE_ID})
         p[PUSHER_CHANNEL].trigger(PUSHER_VOTE_CHANGED_EVENT, data)
