@@ -15,6 +15,22 @@
   -moz-font-smoothing: antialiased;
   font-smoothing: antialiased; }
 
+#user-count {
+  position: fixed;
+  top: 40px;
+  right: 40px;
+  z-index: 1000;
+  color: #fff;
+  font-family: "futura-pt";
+  font-size: 30px;
+  border: 2px solid #fff;
+  width: 50px;
+  text-align: center;
+  line-height: 50px;
+  border-radius: 999em;
+  -moz-border-radius: 999em;
+  -webkit-border-radius: 999em; }
+
 #slides h1, #slides h2, #slides h3, #slides h4, #slides h5 {
   color: #fff;
   margin-bottom: 0.5em; }

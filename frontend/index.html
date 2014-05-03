@@ -19,14 +19,16 @@
 </head>
 <body>
 
-<!-- Slides -->
+<div id="user-count"><span>1</span></div>
 
+<!-- Slides -->
 <div class="reveal">
 
     <!-- Any section element inside of this container is displayed as a slide -->
     <div id="slides" class="slides">
         <section>
             <img src="assets/images/uberhead_logo.svg" alt="" style="width:300px;margin-bottom:30px;"/>
+            <h3>Goto app.uberhead.se on your device</h3>
         </section>
 
         <section>
@@ -133,9 +135,7 @@
         var voteValue = $(this).data("value");
         $.post( "http://api.uberhead.se/presentations?action=vote", {
             'alt': voteValue
-        }).done(function( data ) {
-
-        });
+        }).done(function( data ) {});
 
         $('.choices').html('<h2>Thanks for participating.</h2>');
 
@@ -155,6 +155,30 @@
 
     var pusher = new Pusher('41f5684231688a066aca');
     var channel = pusher.subscribe('uberhead');
+
+
+    /*
+     Heartbeat
+     -------------------------------*/
+    function makeid() {
+        var text = "";
+        var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+        for( var i=0; i < 30; i++ ) text += possible.charAt(Math.floor(Math.random() * possible.length));
+        return text;
+    }
+
+    var userID = makeid();
+
+    function callhome(){
+        // Say hello every 10th second
+        var voteValue = $(this).data("value");
+        $.post( "http://api.uberhead.se/heartbeat", {
+            'userid': userID
+        }).done(function( data ) {});
+    }
+
+    callhome();
+    setInterval(function(){callhome()},10000);
 
 
     /*
@@ -189,6 +213,14 @@
             Reveal.prevFragment();
         }
 
+    });
+
+
+    /*
+     Heartbeat Listener
+     -------------------------------*/
+    channel.bind('usercount-changed', function(data) {
+        $('#user-count span').html(data.userCount);
     });
 
 </script>
