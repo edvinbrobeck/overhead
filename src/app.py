@@ -1,4 +1,6 @@
 
+import datetime
+
 import flask
 import pusher
 import pymongo
@@ -18,7 +20,7 @@ p = pusher.Pusher(app_id='64189', key='41f5684231688a066aca',
 mdb = pymongo.MongoClient().uberhead
 
 @app.route("/presentations", methods=['POST'])
-def index():
+def presentations():
     if flask.request.args.get('action') == 'change_slide':
         x = int(flask.request.form[X_ATTR_NAME])
         y = int(flask.request.form[Y_ATTR_NAME])
@@ -39,6 +41,13 @@ def index():
         return 'f'
     return ''
 
+@app.route("/heartbeat", methods=['POST'])
+def heartbeat():
+    userid = flask.request.form['userid']
+    dt = datetime.datetime.now()
+    mdb.heartbeats.update({'_id': userid}, {'_id': userid, 'beat_at': dt}, upsert=True,
+                          multi=False)
+    return 'h'
 
 if __name__ == "__main__":
     app.debug = True
