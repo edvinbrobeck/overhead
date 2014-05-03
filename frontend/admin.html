@@ -239,19 +239,27 @@
      Slide change Listener
      -------------------------------*/
     channel.bind('slide-changed', function(data) {
-        console.log(data);
-
-
         // Map to body where admin currently is.
         $('body')
             .data('admin-index-h', data.adminIndexH)
             .data('admin-index-v', data.adminIndexV);
 
-
-        console.log($('body'));
-
         // Init slide change
         Reveal.slide( data.adminIndexH, data.adminIndexV );
+
+    });
+
+
+    /*
+     Fragment change Listener
+     -------------------------------*/
+    channel.bind('fragment-changed', function(data) {
+
+        if(data == "next"){
+            Reveal.nextFragment();
+        } else if("prev") {
+            Reveal.prevFragment();
+        }
 
     });
 
@@ -261,9 +269,7 @@
      -------------------------------*/
     channel.bind('vote-changed',function(data){
 
-
         var series  = chart.series[0];
-
         var seriesData = [];
         $.each(data, function(key, val){
             seriesData.push([key, val]);
@@ -303,19 +309,6 @@
         ]
     });
 
-
-    // Keep viewers from sliding too further than admin
-    Reveal.addEventListener( 'slidechanged', function( event ) {
-
-            // API Request slide change
-            $.post( "http://api.uberhead.se/presentations?action=change_slide", {
-                'adminIndexH': event.indexh,
-                'adminIndexV': event.indexv
-            }).done(function( data ) {
-                //alert( "Data Loaded: " + data );
-            });
-
-    } );
 
 </script>
 
