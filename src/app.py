@@ -34,7 +34,7 @@ def index():
         p[PUSHER_CHANNEL].trigger(PUSHER_VOTE_CHANGED_EVENT, data)
         return 'v'
     if flask.request.args.get('action') == 'change_fragment':
-        body = flask.request.form['body']
+        body = flask.request.form['direction']
         p[PUSHER_CHANNEL].trigger(PUSHER_FRAGMENT_CHANGED_EVENT, body)
         return 'f'
     return ''
