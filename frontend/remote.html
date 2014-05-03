@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>UberHead Demo</title>
+    <title>UberHead Admin</title>
 
     <!-- Styles for app -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -26,21 +26,12 @@
     <!-- Any section element inside of this container is displayed as a slide -->
     <div id="slides" class="slides">
         <section>
-            <img src="assets/images/uberhead_logo.svg" alt="" style="width:300px;margin-bottom:30px;"/>
+            <a id="reset" class="btn" href="#1" style="padding:60px;font-size: 100px">Reset</a>
         </section>
 
         <section>
             <section>
-                <h2>Header</h2>
-                <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eum, eveniet itaque maiores odit.</h3>
-
-
-                <div class="choices">
-                    <a class="choice" data-value="awesome" href="">Awesome</a>
-                    <a class="choice" data-value="epic" href="">Epic</a>
-                    <a class="choice" data-value="fail" href="">Fail</a>
-                </div>
-
+               <!-- Chart -->
             </section>
 
             <!-- Vertical -->
@@ -117,32 +108,9 @@
 
 
 
-<!-- Slide specific scripts
+<!-- Slide specific scripts -->
 <script src="assets/components/highcharts/js/highcharts.js"></script>
-<script src="assets/components/highcharts/js/modules/exporting.js"></script>
--->
-
-
-
-<script type="text/javascript">
-
-    $('a.choice').on('click',function(e){
-        e.preventDefault();
-
-        // Vote changed
-        var voteValue = $(this).data("value");
-        $.post( "http://api.uberhead.se/presentations?action=vote", {
-            'alt': voteValue
-        }).done(function( data ) {
-
-        });
-
-        $('.choices').html('<h2>Thanks for participating.</h2>');
-
-    });
-
-
-</script>
+<!--<script src="assets/components/highcharts/js/modules/exporting.js"></script>-->
 
 
 
@@ -157,38 +125,11 @@
     var channel = pusher.subscribe('uberhead');
 
 
-    /*
-     Slide change Listener
-     -------------------------------*/
-    channel.bind('slide-changed', function(data) {
-        console.log(data);
-
-
-        // Map to body where admin currently is.
-        $('body')
-            .data('admin-index-h', data.adminIndexH)
-            .data('admin-index-v', data.adminIndexV);
-
-
-        console.log($('body'));
-
-        // Init slide change
-        Reveal.slide( data.adminIndexH, data.adminIndexV );
-
-    });
-
-
-    /*
-     Fragment change Listener
-     -------------------------------*/
-    channel.bind('fragment-changed', function(data) {
-
-        if(data == "next"){
-            Reveal.nextFragment();
-        } else if("prev") {
-            Reveal.prevFragment();
-        }
-
+    $('a#reset').on('click',function(){
+        $.post( "http://api.uberhead.se/presentations?action=change_slide", {
+            'adminIndexH': 0,
+            'adminIndexV': 0
+        }).done(function( data ) {});
     });
 
 </script>
@@ -224,19 +165,27 @@
 
     // Keep viewers from sliding too further than admin
     Reveal.addEventListener( 'slidechanged', function( event ) {
+            // API Request slide change
+            $.post( "http://api.uberhead.se/presentations?action=change_slide", {
+                'adminIndexH': event.indexh,
+                'adminIndexV': event.indexv
+            }).done(function( data ) {});
+    });
 
-        console.log('Slide Changed');
 
-        // event.previousSlide, event.currentSlide, event.indexh, event.indexv
-        var adminState = {
-            indexH: $('body').data('admin-index-h'),
-            indexV: $('body').data('admin-index-v')
-        };
-        if( event.indexh > adminState.indexH || (event.indexh == adminState.indexH && event.indexv > adminState.indexV)  ){
-            Reveal.slide( adminState.indexH, adminState.indexV );
-        }
+    // Next fragment
+    Reveal.addEventListener('fragmentshown', function(event){
+        $.post( "http://api.uberhead.se/presentations?action=change_fragment", {
+            'direction': 'next'
+        }).done(function( data ) {});
+    });
 
-    } );
+    // Previous fragment
+    Reveal.addEventListener('fragmenthidden', function(event){
+        $.post( "http://api.uberhead.se/presentations?action=change_fragment", {
+            'direction': 'prev'
+        }).done(function( data ) {});
+    });
 
 </script>
 
