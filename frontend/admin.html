@@ -161,7 +161,7 @@
             colors: ['rgba(255,255,255,0.1)'],
 
             title: {
-                text: 'Live Result',
+                text: '',
                 align: 'center',
                 verticalAlign: 'middle',
                 y: 50,
@@ -273,10 +273,13 @@
 
         var series  = chart.series[0];
         var seriesData = [];
+        var totalVoteCount = 0;
         $.each(data, function(key, val){
             seriesData.push([key, val]);
+            totalVoteCount = totalVoteCount + val;
         });
 
+        chart.setTitle({text: totalVoteCount + " Votes"});
         series.setData(seriesData, true);
     });
 
