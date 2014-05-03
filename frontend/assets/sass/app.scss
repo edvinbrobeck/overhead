@@ -65,7 +65,25 @@
   h1,h2,h3,h4,h5 {
     color:#fff;
     margin-bottom: 0.5em;
+
+
+    strong {
+      display: block;
+    }
   }
+
+  .xxl {
+    font-size: 200px;
+  }
+
+  .xl {
+    font-size: 150px;
+  }
+
+  .l {
+    font-size: 100px;
+  }
+
 
   h1 {
     @include futura;
@@ -144,6 +162,7 @@
     cite {
       display: block;
       color:#fff;
+      font-size: 22px;
     }
   }
 }
@@ -178,9 +197,6 @@
     h3 {
       font-size: 80px;
 
-      strong {
-        display: block;
-      }
     }
     p {
       font-size: 40px;

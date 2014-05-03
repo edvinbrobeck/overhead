@@ -39,6 +39,14 @@
 #slides h1, #slides h2, #slides h3, #slides h4, #slides h5 {
   color: #fff;
   margin-bottom: 0.5em; }
+  #slides h1 strong, #slides h2 strong, #slides h3 strong, #slides h4 strong, #slides h5 strong {
+    display: block; }
+#slides .xxl {
+  font-size: 200px; }
+#slides .xl {
+  font-size: 150px; }
+#slides .l {
+  font-size: 100px; }
 #slides h1 {
   font-family: "futura-pt";
   text-transform: uppercase;
@@ -95,7 +103,8 @@
     margin-bottom: 0px; }
   #slides blockquote cite {
     display: block;
-    color: #fff; }
+    color: #fff;
+    font-size: 22px; }
 
 @media only screen and (max-device-width: 480px) {
   #user-count {
@@ -115,8 +124,6 @@
     font-size: 120px; }
   #slides h3 {
     font-size: 80px; }
-    #slides h3 strong {
-      display: block; }
   #slides p {
     font-size: 40px;
     font-weight: normal !important; }

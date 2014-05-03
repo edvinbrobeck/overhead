@@ -22,71 +22,94 @@
     <favorites_list name="gbgstartuphack" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="app.scss" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/assets/sass/app.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="201" column="28" selection-start="3034" selection-end="3034" vertical-scroll-proportion="-6.891892" vertical-offset="2505" max-vertical-offset="3225">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="224" column="40" selection-start="6174" selection-end="6174" vertical-scroll-proportion="-4.285714" vertical-offset="3150" max-vertical-offset="4095">
-              <folding>
-                <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="admin.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/frontend/admin.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="163" column="23" selection-start="5105" selection-end="5105" vertical-scroll-proportion="0.23629242" vertical-offset="2264" max-vertical-offset="5010">
-              <folding>
-                <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#section#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="remote.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/remote.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="135" column="0" selection-start="3793" selection-end="4702" vertical-scroll-proportion="-1.5416666" vertical-offset="1988" max-vertical-offset="2940">
-              <folding>
-                <element signature="n#style#0;n#a#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reveal.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/assets/components/reveal.js/js/reveal.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2434" column="27" selection-start="68223" selection-end="68237" vertical-scroll-proportion="-16.68" vertical-offset="36093" max-vertical-offset="50820">
-              <folding>
-                <element signature="n#!!doc" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="slask.php" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/frontend/slask.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="0" selection-start="2116" selection-end="2116" vertical-scroll-proportion="-27.083334" vertical-offset="355" max-vertical-offset="1095">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.5">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="app.scss" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/frontend/assets/sass/app.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="164" column="19" selection-start="2480" selection-end="2480" vertical-scroll-proportion="-7.7027025" vertical-offset="1890" max-vertical-offset="3465">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/frontend/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="107" column="8" selection-start="2879" selection-end="3470" vertical-scroll-proportion="-2.6133332" vertical-offset="1409" max-vertical-offset="4365">
+                  <folding>
+                    <element signature="n#style#0;n#img#0;n#section#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#h1#0;n#section#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="admin.html" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/frontend/admin.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="94" column="22" selection-start="2510" selection-end="2510" vertical-scroll-proportion="-3.8133333" vertical-offset="1124" max-vertical-offset="5205">
+                  <folding>
+                    <element signature="n#style#0;n#img#0;n#section#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#h1#0;n#section#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#div#0;n#section#0;n#section#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="remote.html" pinned="false" current="true" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/frontend/remote.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="4" column="26" selection-start="93" selection-end="93" vertical-scroll-proportion="0.07343941" vertical-offset="0" max-vertical-offset="3195">
+                  <folding>
+                    <element signature="n#style#0;n#a#0;n#section#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#h1#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="reveal.js" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/frontend/assets/components/reveal.js/js/reveal.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="2434" column="27" selection-start="68223" selection-end="68237" vertical-scroll-proportion="-16.68" vertical-offset="36093" max-vertical-offset="50820">
+                  <folding>
+                    <element signature="n#!!doc" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="slask.php" pinned="false" current="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/frontend/slask.php">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="67" column="0" selection-start="2116" selection-end="2116" vertical-scroll-proportion="-27.083334" vertical-offset="355" max-vertical-offset="1095">
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/frontend/index.html">
+              <provider selected="true" editor-type-id="text-editor">
+                <state line="107" column="7" selection-start="2878" selection-end="3470" vertical-scroll-proportion="0.45899633" vertical-offset="1230" max-vertical-offset="4365">
+                  <folding>
+                    <element signature="n#style#0;n#img#0;n#section#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                    <element signature="n#style#0;n#h1#0;n#section#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -110,9 +133,9 @@
         <option value="$PROJECT_DIR$/frontend/index.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/frontend/assets/sass/app.scss" />
+        <option value="$PROJECT_DIR$/frontend/admin.html" />
         <option value="$PROJECT_DIR$/frontend/index.html" />
         <option value="$PROJECT_DIR$/frontend/remote.html" />
-        <option value="$PROJECT_DIR$/frontend/admin.html" />
       </list>
     </option>
   </component>
@@ -450,7 +473,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2129743" sideWeight="0.670922" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2129743" sideWeight="0.670922" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907802" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -555,13 +578,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/assets/sass/app.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="201" column="28" selection-start="3034" selection-end="3034" vertical-scroll-proportion="-6.891892" vertical-offset="2505" max-vertical-offset="3225">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/assets/components/reveal.js/js/reveal.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2434" column="27" selection-start="68223" selection-end="68237" vertical-scroll-proportion="-16.68" vertical-offset="36093" max-vertical-offset="50820">
@@ -571,30 +587,40 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/assets/sass/app.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="164" column="19" selection-start="2480" selection-end="2480" vertical-scroll-proportion="-7.7027025" vertical-offset="1890" max-vertical-offset="3465">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="94" column="22" selection-start="2510" selection-end="2510" vertical-scroll-proportion="-3.8133333" vertical-offset="1124" max-vertical-offset="5205">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#section#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#section#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#section#0;n#section#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="224" column="40" selection-start="6174" selection-end="6174" vertical-scroll-proportion="-4.285714" vertical-offset="3150" max-vertical-offset="4095">
+        <state line="107" column="8" selection-start="2879" selection-end="3470" vertical-scroll-proportion="-2.6133332" vertical-offset="1409" max-vertical-offset="4365">
           <folding>
-            <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#img#0;n#section#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#section#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/remote.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="135" column="0" selection-start="3793" selection-end="4702" vertical-scroll-proportion="-1.5416666" vertical-offset="1988" max-vertical-offset="2940">
+        <state line="4" column="26" selection-start="93" selection-end="93" vertical-scroll-proportion="0.07343941" vertical-offset="0" max-vertical-offset="3195">
           <folding>
-            <element signature="n#style#0;n#a#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="23" selection-start="5105" selection-end="5105" vertical-scroll-proportion="0.23629242" vertical-offset="2264" max-vertical-offset="5010">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#section#0;n#section#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#a#0;n#section#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h1#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
