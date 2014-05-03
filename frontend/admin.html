@@ -292,6 +292,16 @@
 
 <script>
 
+    var backgroundImage = "";
+    var backgroundImageSize = "";
+    if($(window).width() < 981) {
+        backgroundImage = "assets/images/background-mobile.jpg";
+        backgroundImageSize = "1400px 1600px";
+    } else {
+        backgroundImage = "assets/images/background.jpg";
+        backgroundImageSize = "1800px 1000px";
+    }
+
     // Full list of configuration options available here:
     // https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
@@ -304,18 +314,8 @@
         transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
         // Parallax scrolling
-        parallaxBackgroundImage: 'assets/images/background.jpg',
-        parallaxBackgroundSize: '1800px 1000px',
-
-        // Optional libraries used to extend on reveal.js
-        dependencies: [
-            { src: 'assets/components/reveal.js/lib/js/classList.js', condition: function() { return !document.body.classList; } },
-            { src: 'assets/components/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: 'assets/components/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
-            { src: 'assets/components/reveal.js/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
-            { src: 'assets/components/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } },
-            { src: 'assets/components/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } }
-        ]
+        parallaxBackgroundImage: backgroundImage,
+        parallaxBackgroundSize: backgroundImageSize
     });
 
 
