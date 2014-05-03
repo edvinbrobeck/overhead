@@ -31,7 +31,7 @@
     <div id="slides" class="slides">
         <section>
             <img src="assets/images/uberhead_logo.svg" alt="" style="width:300px;margin-bottom:30px;"/>
-            <h3>Goto app.uberhead.se on your device</h3>
+            <h3>Visit <strong>app.uberhead.se</strong></h3>
         </section>
 
         <section>
@@ -61,10 +61,6 @@
         <section>
             <h2>What people said</h2>
             <h3>So we talked to some people about UberHead.</h3>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium adipisci assumenda corporis dolorem earum eius explicabo in ipsam laborum magnam nostrum obcaecati possimus praesentium quisquam quod saepe, veniam voluptate?
-            </p>
-
 
             <blockquote class="fragment">
                 <p>
@@ -114,19 +110,9 @@
 </div>
 
 <!-- Include JS and dependecies -->
-<script src="assets/js/source/main.js"></script>
 <script src="assets/js/plugins.min.js"></script>
 
 <script src="http://js.pusher.com/2.1/pusher.min.js" type="text/javascript"></script>
-
-
-
-
-<!-- Slide specific scripts
-<script src="assets/components/highcharts/js/highcharts.js"></script>
-<script src="assets/components/highcharts/js/modules/exporting.js"></script>
--->
-
 
 
 <script type="text/javascript">
@@ -180,9 +166,10 @@
         }).done(function( data ) {});
     }
 
-    callhome();
-    setInterval(function(){callhome()},10000);
-
+    $(document).ready(function(){
+        callhome();
+        setInterval(function(){callhome()},10000);
+    })
 
     /*
      Slide change Listener
@@ -230,6 +217,17 @@
 
 <script>
 
+
+    var backgroundImage = "";
+    var backgroundImageSize = "";
+    if($(window).width() < 981) {
+        backgroundImage = "assets/images/background-mobile.jpg";
+        backgroundImageSize = "1200px 1400px";
+    } else {
+        backgroundImage = "assets/images/background.jpg";
+        backgroundImageSize = "1800px 1000px";
+    }
+
     // Full list of configuration options available here:
     // https://github.com/hakimel/reveal.js#configuration
     Reveal.initialize({
@@ -242,8 +240,8 @@
         transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
         // Parallax scrolling
-        parallaxBackgroundImage: 'assets/images/background.jpg',
-        parallaxBackgroundSize: '1800px 1000px',
+        parallaxBackgroundImage: backgroundImage,
+        parallaxBackgroundSize: backgroundImageSize,
 
         // Optional libraries used to extend on reveal.js
         dependencies: [
