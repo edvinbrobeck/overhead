@@ -29,6 +29,7 @@ def index():
         mdb.votes.update({'_id': CURRENT_VOTE_ID}, {'$inc': {'%s' % alt: 1}},
                          upsert=True, multi=False)
         data = mdb.votes.find_one({'_id': CURRENT_VOTE_ID})
+        data.pop('_id')
         p[PUSHER_CHANNEL].trigger(PUSHER_VOTE_CHANGED_EVENT, data)
     return ''
 
