@@ -1,0 +1,4 @@
+.DS_Store
+frontend/.sass-cache
+Thumbs.db
+frontend/node_modules

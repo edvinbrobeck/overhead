@@ -2,14 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>SlidePad</title>
+    <title>OverHead</title>
 
     <!-- Styles for app -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/app.css">
 
     <script src="assets/js/vendor/jquery-1.10.2.js"></script>
-    <script src="assets/components/charts.js/Chart.js"></script>
+
 
 
     <!-- Slide specific styles -->
@@ -26,7 +26,7 @@
     <!-- Any section element inside of this container is displayed as a slide -->
     <div id="slides" class="slides">
         <section>
-
+            <!--
             <div class="stage" style="width: 110px; height: 110px;display: inline-block; margin-bottom: 30px">
                 <div class="cubespinner">
                     <div class="face1"></div>
@@ -37,32 +37,36 @@
                     <div class="face6"></div>
                 </div>
             </div>
+            -->
 
-            <h1>Overhead</h1>
+            <h1>Uberhead</h1>
             <h3>Modern learning.</h3>
         </section>
 
         <section>
             <section>
-                <h2>Two way Communication</h2>
+                <h2>Header</h2>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eum, eveniet itaque maiores odit.</h3>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium adipisci assumenda corporis dolorem earum eius explicabo in ipsam laborum magnam nostrum obcaecati possimus praesentium quisquam quod saepe, veniam voluptate?
                 </p>
 
-                <a id="choice1" class="choice" data-value="Yes" href="#/1/1"><i class="fa fa-thumbs-o-up"></i> Awesome</a>
-                <a id="choice1" class="choice" data-value="Yes" href="#/1/1"><i class="fa fa-thumbs-o-down"></i> Ehm..</a>
+                <a id="choice1" class="choice" data-value="Yes" href="#/1/1">Awesome</a>
+                <a id="choice1" class="choice" data-value="Yes" href="#/1/1">Ehm..No?</a>
+
 
             </section>
 
             <!-- Vertical -->
+
             <section>
-                <h1>Mmmmm....Donut's</h1>
-                <div id="donutchart" style="width: 100%; height: 500px;"></div>
+                <h2>Moter of all Charts</h2>
+                <div id="chart" style="width: 100%; height: 500px;"></div>
                 <a id="choice-reload" class="choice" data-value="Yes" href="javascript:void(0);">Hitta på ny data</a>
             </section>
+
             <section>
-                <h1>Vertical 2</h1>
+                <h1>Header</h1>
                 <p>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium adipisci assumenda corporis dolorem earum eius explicabo in ipsam laborum magnam nostrum obcaecati possimus praesentium quisquam quod saepe, veniam voluptate?
                 </p>
@@ -71,11 +75,13 @@
         </section>
 
         <section>
-            <h2>What people told us</h2>
+            <h2>What people said</h2>
+            <h3>So we talked to some people about UberHead.</h3>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. A accusantium adipisci assumenda corporis dolorem earum eius explicabo in ipsam laborum magnam nostrum obcaecati possimus praesentium quisquam quod saepe, veniam voluptate?
             </p>
 
+
             <blockquote class="fragment">
                 <p>
                     We want it. We really really want it.
@@ -89,21 +95,25 @@
                 </p>
                 <cite>- Edvin Brobeck</cite>
             </blockquote>
+
+
         </section>
 
         <section>
             <section>
-                <h2>Who whe talked to</h2>
+                <h2>Header</h2>
                 <h3>
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium alias aliquam aliquid asperiores at dolore, facilis fuga fugit in incidunt laudantium necessitatibus numquam odit.
                 </h3>
             </section>
+
             <section>
-                <img src="http://mhdnyc.splashthat.com/img/events/52537/assets/6274.spotify-logo-horizontal-white-rgb.png" alt=""/>
+                <img src="assets/images/spotify.png" alt=""/>
             </section>
             <section>
-                <img src="http://download.microsoft.com/download/B/1/0/B102AB56-BB7E-4BCF-9D80-1278A029F95A/MSFT_logo_png.png" alt=""/>
+                <img src="assets/images/msoft.png" alt=""/>
             </section>
+
         </section>
 
         <section>
@@ -124,93 +134,75 @@
 <script src="assets/js/plugins.min.js"></script>
 
 <script src="http://js.pusher.com/2.1/pusher.min.js" type="text/javascript"></script>
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+
 
 
 <!-- Slide specific scripts -->
+<script src="assets/components/highcharts/js/highcharts.js"></script>
+<!--<script src="assets/components/highcharts/js/modules/exporting.js"></script>-->
+
+
 
 <script type="text/javascript">
-    // Find the right method, call on correct element
-    function launchFullscreen(element) {
-        if(element.requestFullscreen) {
-            element.requestFullscreen();
-        } else if(element.mozRequestFullScreen) {
-            element.mozRequestFullScreen();
-        } else if(element.webkitRequestFullscreen) {
-            element.webkitRequestFullscreen();
-        } else if(element.msRequestFullscreen) {
-            element.msRequestFullscreen();
-        }
-    }
+    $(function () {
+        $('#chart').highcharts({
+            chart: {
+                backgroundColor: null,
+                plotBackgroundColor: null,
+                plotBorderWidth: 0,
+                plotShadow: false
+            },
 
-    // Launch fullscreen for browsers that support it!
-    launchFullscreen(document.documentElement); // the whole page
-    launchFullscreen(document.getElementById("slides")); // any individual element
-</script>
-
-<script type="text/javascript">
-    google.load("visualization", "1", {packages:["corechart"]});
-    google.setOnLoadCallback(drawChart);
-    function drawChart(data, options) {
-
-            var data = google.visualization.arrayToDataTable([
-                ['Task', 'Hours per Day'],
-                ['Japp',     Math.floor((Math.random() * 10) + 1)],
-                ['Nope',      Math.floor((Math.random() * 10) + 1)],
-                ['Kanske',  Math.floor((Math.random() * 10) + 1)],
-            ]);
-
-        if(!options){
-            var options = {
-                title: '',
-                pieHole: 0.4,
-                backgroundColor: {
-                    fill:'transparent',
-                    strokeWidth: 0,
-                    stroke:'transparent'
-                },
-                slices: {
-                    0: {offset: 0.05},
-                    1: {offset: 0.1},
-                    2: {offset: 0.15},
-                    3: {offset: 0.05},
-                    4: {offset: 0.05},
-                    5: {offset: 0.05},
-                    6: {offset: 0.05},
-                    7: {offset: 0.05},
-                    8: {offset: 0.05},
-                    9: {offset: 0.05}
-                },
-                fontName:'futura-pt',
-                pieSliceText: 'none',
-                legend: {
-                    position: 'labeled',
-                    textStyle: { color: '#fff', fontSize: 25 }
-                },
-                pieSliceTextStyle:{
-                    color: '#fff',
-                    fontName: 'futura-pt',
-                    fontSize: '20'
-                },
-                pieSliceBorderColor: '#fff',
-                colors:['transparent'],
-                animation:{
-                    duration: 1000,
-                    easing: 'out'
+            colors: ['transparent'],
+            labels: {
+                style: {
+                    color: '#3E576F',
+                    fontFamily: 'futura-pt',
+                    fontSize: '30px'
                 }
-            };
-        }
-
-        var chart = new google.visualization.PieChart(document.getElementById('donutchart'));
-        chart.draw(data, options);
-    }
-
-    $('#choice-reload').on('click',function(){
-        drawChart();
+            },
+            title: {
+                text: '',
+                align: 'center',
+                verticalAlign: 'middle',
+                y: 50
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    dataLabels: {
+                        enabled: true,
+                        distance: -50,
+                        style: {
+                            fontWeight: 'bold',
+                            color: 'white',
+                            textShadow: '0px 1px 2px black'
+                        }
+                    },
+                    startAngle: -90,
+                    endAngle: 90,
+                    center: ['50%', '75%']
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'Browser share',
+                innerSize: '50%',
+                data: [
+                    ['Awesome',   45.0],
+                    ['Epic',       26.8],
+                    ['Fail', 12.8]
+                ]
+            }]
+        });
     });
 
 
 </script>
+
 
 
 <script type="text/javascript">
@@ -227,21 +219,21 @@
         .data('admin-index-v', 0);
 
     var pusher = new Pusher('41f5684231688a066aca');
-    var channel = pusher.subscribe('{{ $slidepad }}-{{ $room_id');
+    var channel = pusher.subscribe('uberhead');
     channel.bind('slide-changed', function(data) {
-        //alert(data.message);
+        //alert(data.adminIndexH);
         console.log(data);
 
         // Map to body where admin currently is.
         $('body')
-            .data('admin-index-h', data.indexH)
-            .data('admin-index-v', data.indexV);
+            .data('admin-index-h', data.adminIndexH)
+            .data('admin-index-v', data.adminIndexV);
 
 
         console.log($('body'));
 
         // Init slide change
-        Reveal.slide( data.indexH, data.indexV );
+        Reveal.slide( data.adminIndexH, data.adminIndexV );
 
     });
 
@@ -262,8 +254,8 @@
         transition: Reveal.getQueryHash().transition || 'default', // default/cube/page/concave/zoom/linear/fade/none
 
         // Parallax scrolling
-        parallaxBackgroundImage: 'http://fc08.deviantart.net/fs70/i/2010/227/1/7/heart_bokeh_by_pigeon8888.jpg',
-        parallaxBackgroundSize: '2100px 1000px',
+        parallaxBackgroundImage: 'assets/images/background.jpg',
+        parallaxBackgroundSize: '1800px 1000px',
 
         // Optional libraries used to extend on reveal.js
         dependencies: [
@@ -279,6 +271,9 @@
 
     // Keep viewers from sliding too further than admin
     Reveal.addEventListener( 'slidechanged', function( event ) {
+
+        console.log('Slide Changed');
+
         // event.previousSlide, event.currentSlide, event.indexh, event.indexv
         var adminState = {
             indexH: $('body').data('admin-index-h'),
