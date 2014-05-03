@@ -156,6 +156,8 @@
                 events: {
                     load: function() {
 
+                        console.log(this.series[0].data);
+
                         // set up the updating of the chart each second
                         /*
                         var series = this.series[0];
@@ -219,9 +221,9 @@
                 name: 'Poll result',
                 innerSize: '50%',
                 data: [
-                    ['Awesome',   45.0],
-                    ['Epic',       26.8],
-                    ['Fail', 12.8]
+                    ['awesome',   1],
+                    ['epic',       1],
+                    ['fail', 1]
                 ]
             }]
         });
@@ -230,7 +232,7 @@
     $('#choice-reload').on('click',function(){
 
         var series  = chart.series[0];
-        console.log(series);
+        console.log(series.data);
         var seriesData = [
             ['Awesome',   Math.floor((Math.random() * 10) + 1)],
             ['Epic',       Math.floor((Math.random() * 10) + 1)],
@@ -247,11 +249,11 @@
 
 <script type="text/javascript">
     // Enable pusher logging - don't include this in production
-    Pusher.log = function(message) {
-        if (window.console && window.console.log) {
-            window.console.log(message);
-        }
-    };
+    //Pusher.log = function(message) {
+//        if (window.console && window.console.log) {
+//            window.console.log(message);
+//        }
+//    };
 
     // Map to body where admin currently is.
     $('body')
@@ -260,8 +262,14 @@
 
     var pusher = new Pusher('41f5684231688a066aca');
     var channel = pusher.subscribe('uberhead');
+
+
+    /*
+     Slide change Listener
+     -------------------------------*/
     channel.bind('slide-changed', function(data) {
         console.log(data);
+
 
         // Map to body where admin currently is.
         $('body')
@@ -274,6 +282,31 @@
         // Init slide change
         Reveal.slide( data.adminIndexH, data.adminIndexV );
 
+    });
+
+
+    /*
+            Vote Cast Listener
+     -------------------------------*/
+    channel.bind('vote-casted',function(data){
+
+        var voteValue = data.value;
+        var series  = chart.series[0];
+        var chartData = series.data;
+
+        console.log(chartData);
+
+        var seriesData = [];
+        $.each(chartData,function(i, val){
+            var newVoteCount = val.y;
+            if(val.name == voteValue){
+                newVoteCount++;
+            }
+
+            seriesData.push([val.name, newVoteCount]);
+        });
+
+        series.setData(seriesData, true);
     });
 
 
