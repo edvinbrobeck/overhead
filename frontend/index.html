@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>OverHead</title>
+    <title>UberHead</title>
 
     <!-- Styles for app -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -60,7 +60,7 @@
             <!-- Vertical -->
 
             <section>
-                <h2>Moter of all Charts</h2>
+                <h2>Mother of all Charts</h2>
                 <div id="chart" style="width: 100%; height: 500px;"></div>
                 <a id="choice-reload" class="choice" data-value="Yes" href="javascript:void(0);">Hitta på ny data</a>
             </section>
@@ -146,27 +146,50 @@
 
 <script type="text/javascript">
     $(function () {
-        $('#chart').highcharts({
+        chart = new Highcharts.Chart({
             chart: {
+                renderTo : 'chart',
                 backgroundColor: null,
                 plotBackgroundColor: null,
                 plotBorderWidth: 0,
-                plotShadow: false
-            },
+                plotShadow: false,
+                events: {
+                    load: function() {
 
-            colors: ['transparent'],
-            labels: {
-                style: {
-                    color: '#3E576F',
-                    fontFamily: 'futura-pt',
-                    fontSize: '30px'
+                        // set up the updating of the chart each second
+                        /*
+                        var series = this.series[0];
+                        setInterval(function() {
+                            //var x = (new Date()).getTime(), // current time
+                            //        y = Math.random();
+                            // series.addPoint([x, y], true, true);
+                            var seriesData = [
+                                ['Awesome',   Math.floor((Math.random() * 10) + 1)],
+                                ['Epic',       Math.floor((Math.random() * 10) + 1)],
+                                ['Fail', Math.floor((Math.random() * 10) + 1)]
+                            ];
+
+                            series.setData(seriesData, true);
+                        }, 1000);
+                        */
+
+                    }
                 }
             },
+
+            colors: ['rgba(255,255,255,0.1)'],
+
             title: {
-                text: '',
+                text: 'Live Result',
                 align: 'center',
                 verticalAlign: 'middle',
-                y: 50
+                y: 50,
+                style: {
+                  color: '#fff',
+                    fontSize: '25px',
+                    fontFamily: 'futura-pt',
+                    textTransform: 'uppercase'
+                }
             },
             tooltip: {
                 pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
@@ -177,9 +200,13 @@
                         enabled: true,
                         distance: -50,
                         style: {
-                            fontWeight: 'bold',
-                            color: 'white',
-                            textShadow: '0px 1px 2px black'
+
+                            textShadow: '0px 1px 2px black',
+                            color: '#fff',
+                            fontFamily: 'futura-pt',
+                            fontSize: '20px',
+                            textTransform: 'uppercase'
+
                         }
                     },
                     startAngle: -90,
@@ -189,7 +216,7 @@
             },
             series: [{
                 type: 'pie',
-                name: 'Browser share',
+                name: 'Poll result',
                 innerSize: '50%',
                 data: [
                     ['Awesome',   45.0],
@@ -198,6 +225,19 @@
                 ]
             }]
         });
+    });
+
+    $('#choice-reload').on('click',function(){
+
+        var series  = chart.series[0];
+        console.log(series);
+        var seriesData = [
+            ['Awesome',   Math.floor((Math.random() * 10) + 1)],
+            ['Epic',       Math.floor((Math.random() * 10) + 1)],
+            ['Fail', Math.floor((Math.random() * 10) + 1)]
+        ];
+
+        series.setData(seriesData, true);
     });
 
 
@@ -221,7 +261,6 @@
     var pusher = new Pusher('41f5684231688a066aca');
     var channel = pusher.subscribe('uberhead');
     channel.bind('slide-changed', function(data) {
-        //alert(data.adminIndexH);
         console.log(data);
 
         // Map to body where admin currently is.
