@@ -35,9 +35,9 @@
       <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="853" selection-end="853" vertical-scroll-proportion="0.65217394" vertical-offset="0" max-vertical-offset="3405">
+            <state line="40" column="54" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.3508246" vertical-offset="366" max-vertical-offset="3555">
               <folding>
-                <marker date="1399120779000" expanded="true" signature="818:849" placeholder="..." />
+                <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -46,8 +46,9 @@
       <file leaf-file-name="admin.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="1038" selection-end="1038" vertical-scroll-proportion="-10.625" vertical-offset="285" max-vertical-offset="5070">
+            <state line="264" column="20" selection-start="7903" selection-end="7903" vertical-scroll-proportion="-11.541667" vertical-offset="3683" max-vertical-offset="5100">
               <folding>
+                <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
@@ -360,6 +361,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="264" column="20" selection-start="7903" selection-end="7903" vertical-scroll-proportion="-11.541667" vertical-offset="3683" max-vertical-offset="5100">
+          <folding>
+            <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/assets/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state line="77" column="13" selection-start="1200" selection-end="1200" vertical-scroll-proportion="-3.6486487" vertical-offset="885" max-vertical-offset="3375">
@@ -367,20 +378,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1038" selection-end="1038" vertical-scroll-proportion="-10.625" vertical-offset="285" max-vertical-offset="5070">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#section#0;n#section#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/frontend/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="853" selection-end="853" vertical-scroll-proportion="0.65217394" vertical-offset="0" max-vertical-offset="3405">
+        <state line="40" column="54" selection-start="1313" selection-end="1313" vertical-scroll-proportion="0.3508246" vertical-offset="366" max-vertical-offset="3555">
           <folding>
-            <marker date="1399120779000" expanded="true" signature="818:849" placeholder="..." />
+            <element signature="n#style#0;n#img#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

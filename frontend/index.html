@@ -34,10 +34,12 @@
                 <h2>Header</h2>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eum, eveniet itaque maiores odit.</h3>
 
-                <a class="choice" data-value="1" href="">Awesome</a>
-                <a class="choice" data-value="2" href="">Epic</a>
-                <a class="choice" data-value="3" href="">Fail</a>
 
+                <div class="choices">
+                    <a class="choice" data-value="awesome" href="">Awesome</a>
+                    <a class="choice" data-value="epic" href="">Epic</a>
+                    <a class="choice" data-value="fail" href="">Fail</a>
+                </div>
 
             </section>
 
@@ -127,8 +129,15 @@
     $('a.choice').on('click',function(e){
         e.preventDefault();
 
-        // API Request send vote
-        alert($(this).data("value"));
+        // Vote changed
+        var voteValue = $(this).data("value");
+        $.post( "http://api.uberhead.se/presentations?action=vote", {
+            'alt': voteValue
+        }).done(function( data ) {
+
+        });
+
+        $('.choices').html('<h2>Thanks for participating.</h2>');
 
     });
 
@@ -167,6 +176,7 @@
         Reveal.slide( data.adminIndexH, data.adminIndexV );
 
     });
+
 
 </script>
 
