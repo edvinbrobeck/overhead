@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>UberHead Demo</title>
+    <title>UberHead Admin</title>
 
     <!-- Styles for app -->
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css" rel="stylesheet">
@@ -34,12 +34,10 @@
                 <h2>Header</h2>
                 <h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim eum, eveniet itaque maiores odit.</h3>
 
+                <div id="chart" style="width: 100%; height: 500px;"></div>
 
-                <div class="choices">
-                    <a class="choice" data-value="awesome" href="">Awesome</a>
-                    <a class="choice" data-value="epic" href="">Epic</a>
-                    <a class="choice" data-value="fail" href="">Fail</a>
-                </div>
+
+
 
             </section>
 
@@ -117,28 +115,108 @@
 
 
 
-<!-- Slide specific scripts
+<!-- Slide specific scripts -->
 <script src="assets/components/highcharts/js/highcharts.js"></script>
-<script src="assets/components/highcharts/js/modules/exporting.js"></script>
--->
+<!--<script src="assets/components/highcharts/js/modules/exporting.js"></script>-->
 
 
 
 <script type="text/javascript">
+    $(function () {
+        chart = new Highcharts.Chart({
+            chart: {
+                renderTo : 'chart',
+                backgroundColor: null,
+                plotBackgroundColor: null,
+                plotBorderWidth: 0,
+                plotShadow: false,
+                events: {
+                    load: function() {
 
-    $('a.choice').on('click',function(e){
-        e.preventDefault();
+                        console.log(this.series[0].data);
 
-        // Vote changed
-        var voteValue = $(this).data("value");
-        $.post( "http://api.uberhead.se/presentations?action=vote", {
-            'alt': voteValue
-        }).done(function( data ) {
+                        // set up the updating of the chart each second
+                        /*
+                        var series = this.series[0];
+                        setInterval(function() {
+                            //var x = (new Date()).getTime(), // current time
+                            //        y = Math.random();
+                            // series.addPoint([x, y], true, true);
+                            var seriesData = [
+                                ['Awesome',   Math.floor((Math.random() * 10) + 1)],
+                                ['Epic',       Math.floor((Math.random() * 10) + 1)],
+                                ['Fail', Math.floor((Math.random() * 10) + 1)]
+                            ];
 
+                            series.setData(seriesData, true);
+                        }, 1000);
+                        */
+
+                    }
+                }
+            },
+
+            colors: ['rgba(255,255,255,0.1)'],
+
+            title: {
+                text: 'Live Result',
+                align: 'center',
+                verticalAlign: 'middle',
+                y: 50,
+                style: {
+                  color: '#fff',
+                    fontSize: '25px',
+                    fontFamily: 'futura-pt',
+                    textTransform: 'uppercase'
+                }
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            plotOptions: {
+                pie: {
+                    dataLabels: {
+                        enabled: true,
+                        distance: -50,
+                        style: {
+
+                            textShadow: '0px 1px 2px black',
+                            color: '#fff',
+                            fontFamily: 'futura-pt',
+                            fontSize: '20px',
+                            textTransform: 'uppercase'
+
+                        }
+                    },
+                    startAngle: -90,
+                    endAngle: 90,
+                    center: ['50%', '75%']
+                }
+            },
+            series: [{
+                type: 'pie',
+                name: 'Poll result',
+                innerSize: '50%',
+                data: [
+                    ['awesome',   1],
+                    ['epic',       1],
+                    ['fail', 1]
+                ]
+            }]
         });
+    });
 
-        $('.choices').html('<h2>Thanks for participating.</h2>');
+    $('#choice-reload').on('click',function(){
 
+        var series  = chart.series[0];
+        console.log(series.data);
+        var seriesData = [
+            ['Awesome',   Math.floor((Math.random() * 10) + 1)],
+            ['Epic',       Math.floor((Math.random() * 10) + 1)],
+            ['Fail', Math.floor((Math.random() * 10) + 1)]
+        ];
+
+        series.setData(seriesData, true);
     });
 
 
@@ -178,6 +256,34 @@
     });
 
 
+    /*
+            Vote Cast Listener
+     -------------------------------*/
+    channel.bind('vote-changed',function(data){
+
+
+        alert(data);
+
+        var voteValue = data.value;
+        var series  = chart.series[0];
+        var chartData = series.data;
+
+        console.log(chartData);
+
+        var seriesData = [];
+        $.each(chartData,function(i, val){
+            var newVoteCount = val.y;
+            if(val.name == voteValue){
+                newVoteCount++;
+            }
+
+            seriesData.push([val.name, newVoteCount]);
+        });
+
+        series.setData(seriesData, true);
+    });
+
+
 </script>
 
 <script>
@@ -212,16 +318,13 @@
     // Keep viewers from sliding too further than admin
     Reveal.addEventListener( 'slidechanged', function( event ) {
 
-        console.log('Slide Changed');
-
-        // event.previousSlide, event.currentSlide, event.indexh, event.indexv
-        var adminState = {
-            indexH: $('body').data('admin-index-h'),
-            indexV: $('body').data('admin-index-v')
-        };
-        if( event.indexh > adminState.indexH || (event.indexh == adminState.indexH && event.indexv > adminState.indexV)  ){
-            Reveal.slide( adminState.indexH, adminState.indexV );
-        }
+            // API Request slide change
+            $.post( "http://api.uberhead.se/presentations?action=change_slide", {
+                'adminIndexH': event.indexh,
+                'adminIndexV': event.indexv
+            }).done(function( data ) {
+                //alert( "Data Loaded: " + data );
+            });
 
     } );
 
