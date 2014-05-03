@@ -27,7 +27,7 @@ def main():
         current_count = user_count
         send_count = user_count
         if send_count == 0:  send_count = 1
-        print 'user count is <%d>' % current_count
+        print 'user count is <%d>, <%s>' % (current_count, datetime.datetime.now())
         p[PUSHER_CHANNEL].trigger(PUSHER_USERCOUNT_CHANGED_EVENT,
                                   {'userCount': send_count})
         print '> push sent (%d)' % send_count
