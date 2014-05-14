@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="3d127c89-bbbc-46cd-9eef-1d4835dee31f" name="Default" comment="" />
+    <list default="true" id="3d127c89-bbbc-46cd-9eef-1d4835dee31f" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/assets/images/background-mobile.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/admin.html" afterPath="$PROJECT_DIR$/frontend/admin.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/remote.html" afterPath="$PROJECT_DIR$/frontend/remote.html" />
+    </list>
     <ignored path="gbgstartuphack.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -22,108 +28,57 @@
     <favorites_list name="gbgstartuphack" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
-      <split-first>
-        <leaf>
-          <file leaf-file-name="app.scss" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/frontend/assets/sass/app.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="164" column="19" selection-start="2480" selection-end="2480" vertical-scroll-proportion="-7.7027025" vertical-offset="1890" max-vertical-offset="3465">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/frontend/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="293" column="0" selection-start="7952" selection-end="7952" vertical-scroll-proportion="0.9608355" vertical-offset="3659" max-vertical-offset="4545">
-                  <folding>
-                    <element signature="n#style#0;n#img#0;n#section#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#h1#0;n#section#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <marker date="1399204989000" expanded="true" signature="1723:2100" placeholder="..." />
-                    <marker date="1399204989000" expanded="true" signature="1923:1988" placeholder="..." />
-                    <marker date="1399204989000" expanded="true" signature="2024:2080" placeholder="..." />
-                    <marker date="1399204989000" expanded="true" signature="2119:2867" placeholder="..." />
-                    <marker date="1399204989000" expanded="true" signature="2612:2699" placeholder="..." />
-                    <marker date="1399204989000" expanded="true" signature="2928:3469" placeholder="..." />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="admin.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/frontend/admin.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="349" column="0" selection-start="9952" selection-end="9952" vertical-scroll-proportion="-9.8133335" vertical-offset="4499" max-vertical-offset="5385">
-                  <folding>
-                    <element signature="n#style#0;n#img#0;n#section#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#h1#0;n#section#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#div#0;n#section#0;n#section#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="remote.html" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/frontend/remote.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="205" column="0" selection-start="5607" selection-end="5607" vertical-scroll-proportion="-27.166666" vertical-offset="2423" max-vertical-offset="3375">
-                  <folding>
-                    <element signature="n#style#0;n#a#0;n#section#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#h1#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="reveal.js" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/frontend/assets/components/reveal.js/js/reveal.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="2434" column="27" selection-start="68223" selection-end="68237" vertical-scroll-proportion="-16.68" vertical-offset="36093" max-vertical-offset="50820">
-                  <folding>
-                    <element signature="n#!!doc" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="slask.php" pinned="false" current="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/frontend/slask.php">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="67" column="0" selection-start="2116" selection-end="2116" vertical-scroll-proportion="-27.083334" vertical-offset="355" max-vertical-offset="1095">
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/frontend/index.html">
-              <provider selected="true" editor-type-id="text-editor">
-                <state line="107" column="7" selection-start="2878" selection-end="3470" vertical-scroll-proportion="0.45899633" vertical-offset="1230" max-vertical-offset="4545">
-                  <folding>
-                    <element signature="n#style#0;n#img#0;n#section#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                    <element signature="n#style#0;n#h1#0;n#section#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf>
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="241" column="64" selection-start="6155" selection-end="6155" vertical-scroll-proportion="-19.0" vertical-offset="3603" max-vertical-offset="5151">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name=".gitignore" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="1" column="6" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="admin.html" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/frontend/admin.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="317" column="40" selection-start="8910" selection-end="8910" vertical-scroll-proportion="-20.0" vertical-offset="4869" max-vertical-offset="6103">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="remote.html" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/frontend/remote.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="159" column="40" selection-start="4130" selection-end="4130" vertical-scroll-proportion="0.09271523" vertical-offset="2591" max-vertical-offset="3825">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
-  <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///dummy.txt" root0="SKIP_INSPECTION" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitLogSettings">
+    <option name="myDateState">
+      <MyDateState />
+    </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
@@ -137,19 +92,19 @@
         <option value="$PROJECT_DIR$/frontend/assets/components/fontawesome/scss/_variables.scss" />
         <option value="$PROJECT_DIR$/frontend/slask.php" />
         <option value="$PROJECT_DIR$/frontend/index.php" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/frontend/assets/sass/app.scss" />
-        <option value="$PROJECT_DIR$/frontend/remote.html" />
-        <option value="$PROJECT_DIR$/frontend/admin.html" />
         <option value="$PROJECT_DIR$/frontend/index.html" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/frontend/admin.html" />
+        <option value="$PROJECT_DIR$/frontend/remote.html" />
       </list>
     </option>
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds">
     <option name="y" value="22" />
-    <option name="width" value="1680" />
-    <option name="height" value="975" />
+    <option name="width" value="2560" />
+    <option name="height" value="1355" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -177,261 +132,156 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
+              <option name="myItemId" value="uberhead" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="vendor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="source" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="images" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reveal.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reveal.js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="gbgstartuphack" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="frontend" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../innovatum" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="PublishConfig">
     <servers>
-      <server id="a9eeddc4-1e9c-4ddd-92a0-85a653208ab4">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
+      <server id="08b768e1-69b8-4825-9ee3-7f6f1945ed29">
+        <serverdata />
       </server>
-      <server id="d6dd8167-65a2-41d2-a02d-aedf5a3f46a5">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
+      <server id="0c2ded0c-36bf-4465-800d-d6aeb640ffe3">
+        <serverdata />
       </server>
-      <server id="e01c11d0-25b2-46d3-9157-cfb38e1e26c3">
-        <serverdata>
-          <mappings>
-            <mapping local="$PROJECT_DIR$" />
-          </mappings>
-        </serverdata>
+      <server id="1042b8b6-5a5a-42ee-b172-004cef25e119">
+        <serverdata />
+      </server>
+      <server id="1c4c53c5-8137-4ead-b89e-59b8ac0ab348">
+        <serverdata />
+      </server>
+      <server id="280fe5ef-e73e-47f9-8c52-1802273d64cd">
+        <serverdata />
+      </server>
+      <server id="29f01333-7dc2-4be3-9349-754f9a574306">
+        <serverdata />
+      </server>
+      <server id="2a54c079-42ee-48ac-adf6-f36753dd3621">
+        <serverdata />
+      </server>
+      <server id="41920c15-e4e3-48c3-ada2-42d4a50f73b9">
+        <serverdata />
+      </server>
+      <server id="475698b3-4b75-40d4-ba00-5255adca2cee">
+        <serverdata />
+      </server>
+      <server id="4834caec-bef4-4041-ae5d-c1d459351a6b">
+        <serverdata />
+      </server>
+      <server id="48cab98b-23ad-48d2-82bd-90acd66cf8bf">
+        <serverdata />
+      </server>
+      <server id="51fd9603-6f71-4238-a338-f83810ab8ea6">
+        <serverdata />
+      </server>
+      <server id="54879766-21df-44fc-824f-4698e8e8cb57">
+        <serverdata />
+      </server>
+      <server id="54988870-9649-450f-957a-99df867b7ffa">
+        <serverdata />
+      </server>
+      <server id="55312fd3-b832-4643-8d8e-aca5cd7c84c8">
+        <serverdata />
+      </server>
+      <server id="5c9e2290-bb0b-4d53-a327-f03c373467d3">
+        <serverdata />
+      </server>
+      <server id="60999ff7-5cc8-42ce-8dee-e8a9b2b1f7f2">
+        <serverdata />
+      </server>
+      <server id="6282f919-5141-457e-98f3-f670b5f3eda7">
+        <serverdata />
+      </server>
+      <server id="6bd44189-c13a-49c3-965e-431af1e787f4">
+        <serverdata />
+      </server>
+      <server id="71517d38-0e2f-4452-9e98-3d14956b60da">
+        <serverdata />
+      </server>
+      <server id="78ba949a-3fda-496b-90b6-73aa9e19a569">
+        <serverdata />
+      </server>
+      <server id="7efc794e-a4d7-4fa7-997d-fa2f7fa3b4a4">
+        <serverdata />
+      </server>
+      <server id="87f20a5d-2b87-452f-bba0-af15ebd22454">
+        <serverdata />
+      </server>
+      <server id="8d49bde1-f4a3-4eb5-be4c-fd11f776786c">
+        <serverdata />
+      </server>
+      <server id="8ecece5b-b548-4ad8-a0f5-5347d1d2ee12">
+        <serverdata />
+      </server>
+      <server id="9516edd1-ca07-4084-84b3-8f8208eafcb8">
+        <serverdata />
+      </server>
+      <server id="a7220f74-302b-4e75-ad85-897eb7bd2d36">
+        <serverdata />
+      </server>
+      <server id="ab3013d2-47bd-478c-8d7b-32001647845a">
+        <serverdata />
+      </server>
+      <server id="adb67253-5504-432b-bd4c-428af03701f3">
+        <serverdata />
+      </server>
+      <server id="b44dfcf1-4cef-4fe1-9247-5ea5162dafba">
+        <serverdata />
+      </server>
+      <server id="b63e6e88-04fd-4def-9faf-4b08bbc41206">
+        <serverdata />
+      </server>
+      <server id="c73591dc-6015-4e92-990f-f0574747f1f6">
+        <serverdata />
+      </server>
+      <server id="c9d0e0ae-c782-4486-9233-af5bac94b5f4">
+        <serverdata />
+      </server>
+      <server id="d9d13852-9008-4ba0-9601-325d5e6d132a">
+        <serverdata />
+      </server>
+      <server id="e1a11901-9676-4f0a-b64f-006b58920b77">
+        <serverdata />
+      </server>
+      <server id="e550c4b3-7111-4d7f-8969-e36cb3e02155">
+        <serverdata />
+      </server>
+      <server id="e5a5ed47-38a0-4694-80cb-565648f84931">
+        <serverdata />
+      </server>
+      <server id="e7e27992-c7de-4036-806e-82209cbd9160">
+        <serverdata />
+      </server>
+      <server id="ee909a43-da6a-41a1-b67f-1831ef774646">
+        <serverdata />
+      </server>
+      <server id="f0b881bb-270f-4f25-be9f-623457497b51">
+        <serverdata />
+      </server>
+      <server id="f0e2b403-ca81-411d-ac27-b99246c70d46">
+        <serverdata />
+      </server>
+      <server id="fa4af48b-dacf-4f0d-a4a3-a4e3b3420009">
+        <serverdata />
+      </server>
+      <server id="fd2dc72a-9392-42f0-947c-c293cb9d9e61">
+        <serverdata />
+      </server>
+      <server id="fee97a3d-6509-44ce-be19-4f22bca4cbda">
+        <serverdata />
       </server>
     </servers>
   </component>
@@ -466,29 +316,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1680" height="975" extended-state="6" />
+    <frame x="0" y="22" width="2560" height="1355" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2129743" sideWeight="0.670922" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21280827" sideWeight="0.670922" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907802" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32907802" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -512,69 +362,39 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/../slidepad/app/views/slides/slides.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="19" selection-start="46" selection-end="1439" vertical-scroll-proportion="-1.2083334" vertical-offset="1" max-vertical-offset="2250">
-          <folding />
-        </state>
+        <state line="2" column="19" selection-start="46" selection-end="1439" vertical-scroll-proportion="-1.2083334" vertical-offset="1" max-vertical-offset="2250" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/../slidepad/app/views/slides/layout.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="954" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="954" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="680" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/.htaccess">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="704">
-          <folding>
-            <marker date="1390490277000" expanded="true" signature="-1:-1" placeholder="&lt;IfModule mod_rewrite.c&gt;" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/assets/css/app.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="182" column="0" selection-start="5158" selection-end="5158" vertical-scroll-proportion="0.0" vertical-offset="2730" max-vertical-offset="2820">
-          <folding />
-        </state>
+        <state line="182" column="0" selection-start="5158" selection-end="5158" vertical-scroll-proportion="0.0" vertical-offset="2730" max-vertical-offset="2820" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/bower.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="19" column="27" selection-start="383" selection-end="383" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="435">
-          <folding />
-        </state>
+        <state line="19" column="27" selection-start="383" selection-end="383" vertical-scroll-proportion="-11.875" vertical-offset="0" max-vertical-offset="435" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/assets/components/highcharts/index.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.2038981" vertical-offset="803" max-vertical-offset="1815">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/slask.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="0" selection-start="2116" selection-end="2116" vertical-scroll-proportion="-27.083334" vertical-offset="355" max-vertical-offset="1095">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.2038981" vertical-offset="803" max-vertical-offset="1815" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/assets/components/highcharts/examples/pie-semi-circle/index.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="34" selection-start="385" selection-end="385" vertical-scroll-proportion="14.708333" vertical-offset="518" max-vertical-offset="1185">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="9" selection-start="50" selection-end="50" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="135">
-          <folding />
-        </state>
+        <state line="11" column="34" selection-start="385" selection-end="385" vertical-scroll-proportion="14.708333" vertical-offset="518" max-vertical-offset="1185" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/assets/js/source/main.js">
@@ -584,56 +404,52 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/assets/components/reveal.js/js/reveal.js">
+    <entry file="file://$PROJECT_DIR$/frontend/assets/sass/app.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2434" column="27" selection-start="68223" selection-end="68237" vertical-scroll-proportion="-16.68" vertical-offset="36093" max-vertical-offset="50820">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
+        <state line="164" column="19" selection-start="2480" selection-end="2480" vertical-scroll-proportion="0.0" vertical-offset="2788" max-vertical-offset="3927">
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/assets/sass/app.scss">
+    <entry file="file://$PROJECT_DIR$/frontend/assets/components/reveal.js/js/reveal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="19" selection-start="2480" selection-end="2480" vertical-scroll-proportion="-7.7027025" vertical-offset="1890" max-vertical-offset="3465">
+        <state line="2434" column="27" selection-start="68223" selection-end="68237" vertical-scroll-proportion="-0.083538085" vertical-offset="41378" max-vertical-offset="57494">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/slask.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="0" selection-start="2116" selection-end="2116" vertical-scroll-proportion="0.9155629" vertical-offset="33" max-vertical-offset="1241">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="6" selection-start="16" selection-end="16" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="241" column="64" selection-start="6155" selection-end="6155" vertical-scroll-proportion="-19.0" vertical-offset="3603" max-vertical-offset="5151">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/frontend/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="317" column="40" selection-start="8910" selection-end="8910" vertical-scroll-proportion="-20.0" vertical-offset="4869" max-vertical-offset="6103">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/frontend/remote.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="205" column="0" selection-start="5607" selection-end="5607" vertical-scroll-proportion="-27.166666" vertical-offset="2423" max-vertical-offset="3375">
-          <folding>
-            <element signature="n#style#0;n#a#0;n#section#0;n#section#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#section#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="349" column="0" selection-start="9952" selection-end="9952" vertical-scroll-proportion="-9.8133335" vertical-offset="4499" max-vertical-offset="5385">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#section#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#section#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#section#0;n#section#3;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="293" column="0" selection-start="7952" selection-end="7952" vertical-scroll-proportion="0.9608355" vertical-offset="3659" max-vertical-offset="4545">
-          <folding>
-            <element signature="n#style#0;n#img#0;n#section#0;n#section#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h1#0;n#section#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <marker date="1399204989000" expanded="true" signature="1723:2100" placeholder="..." />
-            <marker date="1399204989000" expanded="true" signature="1923:1988" placeholder="..." />
-            <marker date="1399204989000" expanded="true" signature="2024:2080" placeholder="..." />
-            <marker date="1399204989000" expanded="true" signature="2119:2867" placeholder="..." />
-            <marker date="1399204989000" expanded="true" signature="2612:2699" placeholder="..." />
-            <marker date="1399204989000" expanded="true" signature="2928:3469" placeholder="..." />
-          </folding>
+        <state line="159" column="40" selection-start="4130" selection-end="4130" vertical-scroll-proportion="0.09271523" vertical-offset="2591" max-vertical-offset="3825">
+          <folding />
         </state>
       </provider>
     </entry>
