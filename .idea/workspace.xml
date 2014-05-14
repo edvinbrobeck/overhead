@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3d127c89-bbbc-46cd-9eef-1d4835dee31f" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/scopes/scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/frontend/assets/images/background-mobile.png" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/admin.html" afterPath="$PROJECT_DIR$/frontend/admin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/frontend/remote.html" afterPath="$PROJECT_DIR$/frontend/remote.html" />
     </list>
     <ignored path="gbgstartuphack.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -47,19 +44,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="admin.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/frontend/admin.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="317" column="40" selection-start="8910" selection-end="8910" vertical-scroll-proportion="-20.0" vertical-offset="4869" max-vertical-offset="6103">
+            <state line="217" column="24" selection-start="6473" selection-end="6473" vertical-scroll-proportion="0.47268212" vertical-offset="3118" max-vertical-offset="6103">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="remote.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="remote.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/frontend/remote.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="159" column="40" selection-start="4130" selection-end="4130" vertical-scroll-proportion="0.09271523" vertical-offset="2591" max-vertical-offset="3825">
+            <state line="159" column="40" selection-start="4130" selection-end="4130" vertical-scroll-proportion="-4.3076925" vertical-offset="2591" max-vertical-offset="3825">
               <folding />
             </state>
           </provider>
@@ -95,8 +92,8 @@
         <option value="$PROJECT_DIR$/frontend/assets/sass/app.scss" />
         <option value="$PROJECT_DIR$/frontend/index.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/frontend/admin.html" />
         <option value="$PROJECT_DIR$/frontend/remote.html" />
+        <option value="$PROJECT_DIR$/frontend/admin.html" />
       </list>
     </option>
   </component>
@@ -439,16 +436,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/admin.html">
+    <entry file="file://$PROJECT_DIR$/frontend/remote.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="317" column="40" selection-start="8910" selection-end="8910" vertical-scroll-proportion="-20.0" vertical-offset="4869" max-vertical-offset="6103">
+        <state line="159" column="40" selection-start="4130" selection-end="4130" vertical-scroll-proportion="-4.3076925" vertical-offset="2591" max-vertical-offset="3825">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/frontend/remote.html">
+    <entry file="file://$PROJECT_DIR$/frontend/admin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="159" column="40" selection-start="4130" selection-end="4130" vertical-scroll-proportion="0.09271523" vertical-offset="2591" max-vertical-offset="3825">
+        <state line="217" column="24" selection-start="6473" selection-end="6473" vertical-scroll-proportion="0.47268212" vertical-offset="3118" max-vertical-offset="6103">
           <folding />
         </state>
       </provider>
