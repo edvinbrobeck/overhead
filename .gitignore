@@ -1,4 +1,5 @@
 .DS_Store
+.idea/
 frontend/.sass-cache
 Thumbs.db
 frontend/node_modules
